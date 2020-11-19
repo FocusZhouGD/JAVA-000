@@ -1,8 +1,10 @@
 package autobeanreal;
 
+import lombok.Data;
 import org.springframework.stereotype.Component;
 
 @Component
+@Data
 public class School implements ISchool{
     private String b ="你好";
     @Override
