@@ -35,4 +35,7 @@ xml什么时候创建了对象类的实例并对字段赋值了吗？
 
 @Qualifier 限定符 场景就是 一个interface 多个实现 （指定 名字小写)明确是哪一个实现类
 
+spring 自动的装配
+1 组件扫描 (Component scanning)
+2 自动装配  (autowiring)
            
