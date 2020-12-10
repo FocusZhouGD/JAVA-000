@@ -1,0 +1,19 @@
+server:
+  port: 9090
+
+spring:
+  datasource:
+    db-master:
+      driverClassName: com.mysql.cj.jdbc.Driver
+      url: mysql://localhost:3306/master?serverTimezone=UTC&useSSL=true
+      username: root
+      password: root
+    db-read:
+      driverClassName: com.mysql.cj.jdbc.Driver
+      url: mysql://localhost:3306/slave?serverTimezone=UTC&useSSL=true
+      username: root
+      password: root
+  aop:
+    auto: true
+
+
