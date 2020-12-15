@@ -2,13 +2,16 @@ package com.example.zgd.datasource.dynamic;
 
 import lombok.extern.slf4j.Slf4j;
 
+/**
+ * ContextHolder类持有当前线程数据源
+ */
 @Slf4j
 public class DataSourceContextHolder {
 
     /**
      * 默认数据源
      */
-    private static final String DEFAULT_DS = "db-master";
+    public static final String DEFAULT_DS = "db-master";
 
     private static final ThreadLocal<String> contextHolder = new ThreadLocal<>();
 
